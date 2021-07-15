@@ -1,6 +1,5 @@
 import java.util.*;
 
-import javax.security.auth.x500.X500Principal;
 public class Arithmetic_operations {
     public static void main(String args[])
     {
