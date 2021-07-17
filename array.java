@@ -11,8 +11,14 @@ public class array {
         }
         System.out.println("The five elements of the array  are : ");
         for (i=0;i<A.length;i++)
+        {
         System.out.print(A[i]+" ");
-
+        }
+        System.out.println("");
+        System.out.println("The five elements of the array in reversed order are : ");
+        for (i=A.length-1;i>=0;i--)
+        {
+        System.out.print(A[i]+" ");
+        }
     }
-    
 }
