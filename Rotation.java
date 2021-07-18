@@ -11,11 +11,12 @@ public class Rotation {
         for (i=1; i<arr.length; i++)
         {
              arr[i-1]=arr[i];
-             
         }
         arr[arr.length-1]=temp;
+
         System.out.println(" ");
         System.out.println("Array after rotation is : ");
+
         for (int x : arr)
         System.out.print(x+" ");
     }

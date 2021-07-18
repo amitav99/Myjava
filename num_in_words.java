@@ -5,7 +5,7 @@ public class num_in_words {
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter any number to print in words ");
     num=sc.nextInt();
-    String str="";
+    String str=""; 
     n = num;
     while (n>0)
     {
