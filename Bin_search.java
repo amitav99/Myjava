@@ -4,7 +4,7 @@ public class Bin_search {
 
     public static int bin_search(int arr[], int key, int low, int high)
     {
-        while(low<high)
+        while(low<=high)
         {
             int mid = (low+high)/2;
             if (key==arr[mid])
@@ -31,14 +31,14 @@ public class Bin_search {
         int key=52;
         int n = arr.length-1;
         int low = 0, high = n-1;
-         result = bin_search(arr,key,low, high);
+        result = bin_search(arr,key,low, high);
         if (result == -1)
         {
             System.out.println("The element is not present");
         }
         else
         {
-            System.out.println("The element present"+ mid);  
+            System.out.println("The element present at index"+ result);  
         }
     }
     
