@@ -1,43 +1,37 @@
 public class Bubblesort
 {
-    int  binarysearch(int arr[], int key, int low, int high)
+    void bubble_sort(int arr[])
     {
-     while (low<=high)
+        int n =arr.length;
+        for (int i=0; i<n-1;i++)
         {
-            int mid=(low+high)/2;
-            if (key==arr[mid])
+            for (int j=0; j<n-i-1;j++)
             {
-                return mid;
-            }
-            else if (key<arr[mid])
-            {
-                high=mid-1;
-            }
-            else
-            {
-                low= mid+1;
+                if(arr[j] > arr[j+1])
+                {
+                    //swap arr[j+1] and arr[j]
+                    int temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
             }
         }
-        return -1;
     }
+    void print_array(int arr[])
+    {
+    int n=arr.length;
+    for (int i=0; i<n; i++)
+    {
+        System.out.print(arr[i]+" ");
+    }
+}      
     public static void main (String args[])
     {
         Bubblesort ob = new Bubblesort();
-        int arr[]={3,5,6,7,8};
-        int key=7;
-        int n =arr.length;
-        int low=0;
-        int high=n-1;
-        int result =ob.binarysearch(arr, key, low, high);
-        int add=result+1;
-        if (result==-1)
-        {
-            System.out.println("not found");
-        }
-        else
-        {
-            
-            System.out.println("found at "+ add);
-        }
+        int arr[]={8,1,6,7,5};
+        ob.bubble_sort(arr);
+        System.out.println("The sorted array : ");
+        ob.print_array(arr);
     }
 }
+
