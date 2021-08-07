@@ -6,7 +6,7 @@ public class Count
     {
         int c=0, n;
         Scanner sc = new Scanner (System.in);
-        System.out.println("Enter the number ");
+        System.out.println("Enter the number to count the number  of digits");
         n=sc.nextInt();
         while(n>0)
         {
