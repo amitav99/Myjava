@@ -8,7 +8,7 @@ public class Add {
     System.out.println("Enter any two numbers to add : "); // the additon of two number
     a=sc.nextInt();
     b=sc.nextInt();
-    c=a+b;
+    c=a+b;//adding
     System.out.println("The sum is "+c);//printing sum
 
     }
