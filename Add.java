@@ -3,14 +3,15 @@ import java.util.Scanner;
 import java.util.Scanner;
 public class Add {
     public static void main(String[] args) {
-    int a,b,c;
+    int a,b,c, d;
     Scanner sc = new Scanner(System.in); // for taking user input
     System.out.println("Enter any two numbers to add : "); // the additon of two number
     a=sc.nextInt();
     b=sc.nextInt();
     c=a+b;//adding
+    d =a-b;
     System.out.println("The sum is "+c);//printing sum
-    System.out.print("hello");
+    System.out.println("The difference is "+ d);
 
     }
     
